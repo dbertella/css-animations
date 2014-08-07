@@ -25,13 +25,13 @@ module.exports = function(grunt) {
         dest: "css/global.css"
       }
     },
-
+    
     shell: {
       jekyllServe: {
         command: "jekyll serve --baseurl="
       },
       jekyllBuild: {
-        command: "jekyll build --config _config-dev.yml"
+        command: "jekyll build"
       }
     },
 

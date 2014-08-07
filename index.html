@@ -4,17 +4,10 @@ layout: default
 
 <div class="home">
 
-  <h1>Posts</h1>
+  <h1>{{ site.title }}</h1>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <p>Css-only mobile menu thanks to: <a href="http://www.sitepoint.com/pure-css-off-screen-navigation-menu/" target="_blank">Austin Wulf</a></p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p>Jekyll setup and scss structur inspired from: <a href="https://twitter.com/chriscoyier">@chriscoyier</a> <a href="http://css-tricks.com/video-screencasts/screencast-134-tour-site-progress-built-jekyll-grunt-sass-svg-system/">screencast</a> </p>
 
 </div>

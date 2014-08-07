@@ -6,17 +6,18 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
-    
     sass: {
       
-      options: {
-        outputStyle: "expanded" //'compressed'
-      },
-      files: {
-        "css/global-unprefixed.css": "scss/global.scss"
+      dist: {
+        options: {
+          outputStyle: 'expanded' //'compressed'
+        },
+        files: {
+          "css/global-unprefixed.css": "scss/global.scss"
+        }        
       }
-      
     },
+    
 
     autoprefixer: {
       global: {
@@ -24,13 +25,13 @@ module.exports = function(grunt) {
         dest: "css/global.css"
       }
     },
-
+    
     shell: {
       jekyllServe: {
         command: "jekyll serve --baseurl="
       },
       jekyllBuild: {
-        command: "jekyll build --config _config-dev.yml"
+        command: "jekyll build"
       }
     },
 
