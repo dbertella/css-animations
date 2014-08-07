@@ -1,0 +1,32 @@
+// mixins
+@mixin bg-full($bg-image) {
+	background-image: url($bg-image);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+// placeholders
+%centerer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+%parent-centerer {
+	transform-style: preserve-3d;
+}
+
+%absolute {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+%padding-top-bottom {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
