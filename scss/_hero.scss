@@ -1,7 +1,18 @@
-.hero {
-  background: url(../images/hero.jpg);
-  background-position: bottom center;
-  background-size: cover;
-  height: 400px;
-  margin: 0 0 75px 0;
+.site-wrap {
+	@include animation('pulsate 20s infinite alternate');
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	margin: 0;
 }
+@-webkit-keyframes pulsate {
+    0% {background: map-get($colors, purple)}
+    20% {background: map-get($colors, darkred)}
+    40% {background: map-get($colors, darkyellow)}
+    60% {background: map-get($colors, darkgreen)}
+    80% {background: map-get($colors, darkblu)}
+    100% {background: map-get($colors, lightbrown)}
+}
+
+
+ 

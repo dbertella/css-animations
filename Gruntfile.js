@@ -7,14 +7,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
     sass: {
-      
-      dist: {
+      global: {
         options: {
-          outputStyle: 'expanded' //'compressed'
+          style: "expanded"//"compressed"
         },
         files: {
           "css/global-unprefixed.css": "scss/global.scss"
-        }        
+        }
       }
     },
     

@@ -4,3 +4,37 @@ $yellow: #E9CB30;
 
 $midgray: #383838;
 $darkgray: #242424;
+
+$colors: (
+	"purple": #8d246e,
+	"darkorange": #D96C00,
+	"lightblue": #0066A8,
+	"darkred": #AC2220,
+	"darkyellow": #E9B501,
+	"lightbrown": #A15E3A,
+	"green": #00AA00,
+	"blu": #0059B3,
+	"orange": #F27B33,
+	"red": #CE0000,
+	"darkgreen": #008040,
+	"darkbrown": #800000,
+	"darkblu": #004080
+	
+);
+
+// @each $colors, $color in $colors {
+//     .#{$colors} .section {
+// 		.listing-internal a {
+// 			color: $color;
+// 		}
+// 		header {
+//             background-color: $color;
+//         }
+//     }
+// 	.aside ul li.#{$colors} {
+// 		&.active,
+// 		&:hover {
+// 			border-left-color: $color;
+// 		}
+// 	}
+// }
