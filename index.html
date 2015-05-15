@@ -1,0 +1,31 @@
+<svg width="300" height="300" style="border: 5px solid lightgreen">
+  <circle cx="150" cy="150" r="20" fill="tomato">
+    <animate attributeName="cx" from="0%" to="100%" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="0" to="100%" dur="5s" repeatCount="indefinite" />
+    </rect>
+</svg>
+
+<svg width="300" height="300" viewBox="0 0 300 340" style="border: 5px solid lightgreen">
+  <!-- Motion Path -->
+  <path id="motionPath" d="M5,218C-10,138.667,20,39.333,74.667,45.333 S244.667,200,244.667,200 Z" stroke="tomato" stroke-width="3" fill="none" />
+  <!-- Animated Item -->
+  <circle cx="" cy="" r="20">
+    <animateMotion dur="3s" repeatCount="indefinite">
+      <mpath xlink:href="#motionPath" />
+    </animateMotion>
+  </circle>
+</svg>
+
+<svg width="300" height="300" style="border: 5px solid lightgreen">
+  <rect x="75" y="75" width="150" height="150">
+    <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="5s" repeatCount="1" begin="click" />
+  </rect>
+  <text x="134" y="153" fill="whitesmoke" font-size="15">Click</text>
+</svg>
+
+<svg width="300" height="300" style="border: 5px solid lightgreen">
+  <circle cx="150" cy="150" r="10" fill="tomato">
+    <set attributeName="r" to="100" begin="3s" fill="freeze" />
+    <set attributeName="r" to="30" begin="click" fill="freeze" />
+  </circle>
+</svg>
